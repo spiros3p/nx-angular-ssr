@@ -11,7 +11,7 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/nx-angular-ssr",
+        "outputPath": "dist/app",
         "index": "./src/index.html",
         "browser": "./src/main.ts",
         "polyfills": ["zone.js"],
@@ -90,7 +90,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "nx-angular-ssr:build",
-        "staticFilePath": "dist/nx-angular-ssr/browser",
+        "staticFilePath": "dist/app/browser",
         "spa": true
       }
     }
