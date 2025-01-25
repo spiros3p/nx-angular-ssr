@@ -1,3 +1,4 @@
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import {
   provideClientHydration,
@@ -12,5 +13,6 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay(), withIncrementalHydration()),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(appRoutes),
+    provideHttpClient(withFetch()),
   ],
 };
