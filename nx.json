@@ -50,6 +50,20 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@ngneat/spectator:spectator-component": {
+      "jest": true,
+      "style": "scss",
+      "changeDetection": "OnPush"
+    },
+    "@ngneat/spectator:spectator-service": {
+      "jest": true
+    },
+    "@ngneat/spectator:spectator-directive": {
+      "jest": true
+    },
+    "@ngneat/spectator:spectator-pipe": {
+      "jest": true
     }
   },
   "defaultProject": "nx-angular-ssr"
