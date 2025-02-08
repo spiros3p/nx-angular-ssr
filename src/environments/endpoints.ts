@@ -1,5 +1,5 @@
 export const endpoints = {
-  register: '/',
+  signup: '/',
   login: '/',
   logout: '/',
 };
