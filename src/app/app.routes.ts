@@ -7,14 +7,13 @@ export const appRoutes: Route[] = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
     canActivate: [isNotAuthenticatedGuard],
   },
-  {
-    path: '',
-    // component: AppComponent,
-    //   loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
-    //   canActivate: [],
-  },
+  // {
+  //   path: '',
+  //   //   loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  //   //   canActivate: [],
+  // },
   {
     path: '**',
-    redirectTo: '/',
+    redirectTo: 'auth',
   },
 ];

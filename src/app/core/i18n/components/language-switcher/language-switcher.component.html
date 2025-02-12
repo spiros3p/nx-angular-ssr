@@ -1,0 +1,7 @@
+<select (change)="setLanguage($event)">
+  @for (language of availableLanguages(); track $index) {
+    <option [value]="language">
+      {{ language }}
+    </option>
+  }
+</select>
